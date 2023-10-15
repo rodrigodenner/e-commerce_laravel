@@ -1,0 +1,4 @@
+AULA SOBRE MODEL
+
+=> criando um MODEL
+php artisan make:model produto
