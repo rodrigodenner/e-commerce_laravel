@@ -39,6 +39,7 @@
         <li><a href="{{route('site.carrinho')}}">Carrinho <span class="badge white">{{Cart::getContent()->count()}}</span></a></li>
       </ul>
 
+      @auth
       <ul id="nav-mobile" class="right ">
         <li class="dropdown-trigger2" data-target="dropdown2">
           <a href="#">Olá! {{ auth()->user()->firstName }}! 
@@ -46,6 +47,15 @@
           </a>
         </li>
       </ul>
+      @else
+      <ul id="nav-mobile" class="right ">
+        <li class="dropdow" ">
+          <a href="{{route('login.form')}}">Login 
+            <i class="material-icons right">lock</i>
+          </a>
+        </li>
+      </ul>
+      @endauth
 
     </div>
   </nav>
