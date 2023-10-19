@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Categoria extends Model
 {
-    use HasFactory;
+  use HasFactory;
+  
+  public function produtos()
+  {
+    return $this->hasMany(Produtos::class,'id_categoria','id');
+  }
 }
