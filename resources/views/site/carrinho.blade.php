@@ -89,9 +89,9 @@
     </div>
   </div>
   
-  <div class="row container center ">
-    <a href="{{route('site.index')}}"><button class="btn waves-effect waves-light blue">Continuar comprando <i class="material-icons rigth">arrow_back</i></button></a>
-    <button class="btn waves-effect waves-light green">Finalizar pedido <i class="material-icons rigth">check</i></button>
+  <div class=" row center container" style="margin-top: 10px">
+    <a href="{{route('site.index')}}" class="btn waves-effect waves-light blue">Continuar comprando<i class="material-icons right">clear</i></a><br> <br>
+    <button class="btn waves-effect waves-light green">Finalizar pedido <i class="material-icons rigth">check</i></button> 
     <a href="{{ route('site.cartclear') }}" class="btn waves-effect waves-light blue">Limpar carrinho <i class="material-icons right">clear</i></a>
 
   </div>
