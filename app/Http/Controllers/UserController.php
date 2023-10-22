@@ -36,13 +36,13 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-      $user = $request->all();
-      $user['password'] = bcrypt($request->password);
-      $user = User::create($user);
+        $user = $request->all();
+        $user['password'] = bcrypt($request->password);
+        $user = User::create($user);
 
-      Auth::login($user);
+        Auth::login($user);
 
-      return redirect()->route('admin.dashboard');
+        return redirect()->route('admin.dashboard');
     }
 
     /**

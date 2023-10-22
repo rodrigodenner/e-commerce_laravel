@@ -12,7 +12,7 @@ class SiteController extends Controller
   public function index()
   {
     // return "Pagina Index de Produtos";
-    $produtos = Produtos::paginate(3);
+    $produtos = Produtos::paginate(6);
     return view('site.home',compact('produtos'));
   }
 
